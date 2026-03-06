@@ -20,28 +20,23 @@ pipeline {
             steps {
                 bat '''
                     cd api_test_framework
-                    python run_tests.py
+                    python -m pytest tests/ -v --html=reports/report.html --self-contained-html
                 '''
-            }
-        }
-        
-        stage('Publish Test Report') {
-            steps {
-                publishHTML([
-                    allowMissing: false,
-                    alwaysLinkToLastBuild: true,
-                    includes: '**/*.html',
-                    reportDir: 'api_test_framework/reports',
-                    reportFiles: 'report.html',
-                    reportName: 'API Test Report'
-                ])
             }
         }
     }
     
     post {
         always {
-            cleanWs()
+            archiveArtifacts artifacts: 'api_test_framework/reports/**', allowEmptyArchive: true
+            publishHTML([
+                allowMissing: false,
+                alwaysLinkToLastBuild: true,
+                includes: '**/*.html',
+                reportDir: 'api_test_framework/reports',
+                reportFiles: 'report.html',
+                reportName: 'API Test Report'
+            ])
         }
         success {
             echo 'Build Successful!'
