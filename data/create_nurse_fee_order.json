@@ -1,0 +1,26 @@
+{
+    "addressId": 6296,
+    "nurseInfoId": 6691,
+    "buyNum": 2,
+    "specialCode": "EG012506241309138472d820000QI18O",
+    "specialUnit": 2,
+    "staffId": null,
+    "specifyGender": null,
+    "staffLevel": 1,
+    "staffsId": "",
+    "userCouponId": null,
+    "couponName": null,
+    "goodsCode": "EG002505301546064062df50000CMXpD",
+    "remark": "",
+    "serviceDates": [
+        {
+            "homeTime": "",
+            "serviceTimes": null
+        }
+    ],
+    "materialPackageNames": [
+        "育儿1"
+    ],
+    "reachStore": 0,
+    "reachStoreId": null
+}

@@ -1,0 +1,13 @@
+# 配置文件
+
+base_url: "https://api-test.ehutong.net"
+headers:
+  m-port: "5"
+  Content-Type: "application/json"
+
+# 接口配置
+endpoints:
+  h5_qrcode:
+    path: "/ehutong-ehutcore-front-miniapp/miniapp/channel/store/h5QrCode"
+    method: "POST"
+    description: "获取门店H5二维码"

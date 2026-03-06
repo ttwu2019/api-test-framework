@@ -1,0 +1,25 @@
+{
+    "memo": "",
+    "specifyGender": null,
+    "userCouponId": null,
+    "nurseInfoId": 2227,
+    "addressId": 6296,
+    "couponName": null,
+    "staffLevel": 1,
+    "buyNum": 1,
+    "homeNum": 1,
+    "specialCode": "EG012506241325328402d820000sILE6",
+    "specialUnit": 4,
+    "staffId": null,
+    "goodsCode": "EG0025060417454479129220000eu6jk",
+    "remark": "",
+    "serviceDates": [
+        {
+            "homeTime": "",
+            "serviceTimes": 1
+        }
+    ],
+    "materialPackageNames": [],
+    "reachStore": 0,
+    "scene": null
+}
